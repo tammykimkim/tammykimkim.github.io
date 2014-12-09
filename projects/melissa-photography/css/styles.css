@@ -12,9 +12,8 @@ body {
 	padding: 0;
 	width:100%; 
 	min-width:320px; 
-	font-size: 16px;
+	font-size: 15px;
 	font-family: "Roboto", Helvetica, Arial, sans-serif; 
-	font-weight: 400;
 	color:#000;  
 }
 .wrapper {
@@ -134,7 +133,12 @@ p {
   text-align: center;
 	background: url(../images/gallery/families/IMG_6955_2.jpg) fixed;
 	background-size: cover;
+  -webkit-transition: -webkit-filter 1s;
+  -webkit-filter: grayscale(100%); 
+}
 
+.home:hover {
+  -webkit-filter: grayscale(0%); 
 }
 
 /***********************************************/
@@ -253,9 +257,16 @@ li.galleryItem {
   -moz-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75);
 }
 
-li.galleryItem img {
+.galleryItem img {
 	max-width: 100%;
+  -webkit-transition: -webkit-filter 1s;
+  -webkit-filter: grayscale(100%); 
 }
+
+.galleryItem img:hover {
+  -webkit-filter: grayscale(0%); 
+}
+
 
 .section.gallery {
   background: url(../images/photos/sunset-blurred.jpg);
