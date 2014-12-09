@@ -1,8 +1,9 @@
-Website hand-coded and created by Tammy Kim
+Final Project:
 
-http://www.sapphirepixel.com
+Photography Website for Melissa Teixiera, Photographer.
 
-Thank you to the Hacker You community for helping me catch up to the net in 12 weeks.
+===============================================================================
+Thank you to the Hacker You community for teaching me so much in just 12 weeks.
 
 
 
