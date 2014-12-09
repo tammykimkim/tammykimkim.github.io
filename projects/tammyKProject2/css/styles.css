@@ -1,0 +1,436 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	margin:0 auto; 
+	width:100%; 
+	min-width:320px; 
+	font-size: 15px;
+	font-family: "Muli", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	color:#000; 
+	letter-spacing:1px; 
+}
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+h1, h2, h3 {
+	font-family: 'Muli', sans-serif;
+	letter-spacing: 2px;
+	text-align: center;
+}
+h1 {
+	font-size: 44px;
+	color: #fff;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+h3, textarea ~ h3 {
+	margin-top: 40px;
+	font-size: 36px;
+	font-family: 'Roboto Slab', serif;
+}
+
+ul {
+	margin: 0;
+}
+p {
+	line-height: 150%;
+}
+hr.style {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-w {
+	width: 60%;
+    color: #fff;
+}
+
+/***********************************************/
+/* NAV  									   */
+/***********************************************/
+.nav {
+	width: 100%;
+	position: fixed;
+	background: #3d3d3d;
+	padding: 25px 0;
+	top: 0;
+	box-shadow: 1px 1px 6px #000;
+}
+.nav ul {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.nav ul li {
+	display: inline-block;
+	text-align: center;
+	margin: 0 25px;
+	font-family: 'Muli', sans-serif;
+	text-transform: uppercase;
+}
+.nav ul li a {
+	letter-spacing: 0.20em;
+	color: rgba(255,255,255,0.6);
+	text-decoration: none;
+}
+.nav ul li a:hover {
+	color: rgba(255,255,255,0.3);
+}
+
+/***********************************************/
+/* HEADER  									   */
+/***********************************************/
+.header {
+	text-align: center;
+	background: url(../images/camera.jpg) fixed;
+	background-size: cover;
+	color: #E05A00;
+	padding: 100px 0;
+	font-size: 30px;
+	height: 600px;
+}
+
+.headline p {  /* For Title text in front of Home page photo */
+	font-size: 30px;
+}
+
+/***********************************************/
+/* ABOUT									   */
+/***********************************************/
+.section {
+	padding: 40px 80px 80px;
+	text-align: center;
+}
+.section.about {
+	padding: 40px 40px 80px;
+}
+.about {
+	background: #CD7A50;
+}
+.featured-text {
+	font-size: 24px; 
+	font-weight: bold;
+}
+.contentHalf {   /* Melissa T ---  Photography */
+	width: 45%;
+	float: left;
+	margin: 0 2.5%;
+}
+
+.contentHalf h3 ~ p {
+	padding: 20px;
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 20px;
+	text-align: center;
+}
+
+.gallery {
+	background: url(../images/taking_a_pic.jpg);
+	background-size: cover;
+	margin: 0 auto;
+}
+
+/***********************************************/
+/* GALLERY									   */
+/***********************************************/
+
+ul.galleryWrapper{
+	padding:0;
+}
+li.galleryItem {
+	display: inline-block;
+	width: 30%;
+	margin: 1%;
+	border: 5px solid #fff;
+}
+li.galleryItem img {
+	max-width: 100%;
+}
+
+/***********************************************/
+/* CONTENT section - FORM					   */
+/***********************************************/
+*:focus {
+	outline:none;
+}
+.contact-me {
+	background: #2ba0a3;
+	width:100%; 
+	float:left;
+	padding:40px 40px 80px 40px;
+	position: relative;
+}
+.form {
+	padding:25px; 
+	border:2px solid #231f20; 
+	float:left; 
+	width:100%;
+}
+.mid-cont {
+	position:relative; 
+	width:85%; 
+	margin:auto;
+}
+.form-title {  /*"I'd love to hear from you"*/
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 20px;
+	background:#2ba0a3; 
+	position:absolute; 
+	margin:-20px 0 0 30px; 
+	padding:0 2px 0 4px;
+}
+.left-cont, .right-cont {
+	padding: 20px;
+	width:50%; 
+	float:left;
+}
+.form-name {
+	width: 100%;
+}
+.form-tel {
+	width:38%; 
+}
+.form-email {
+	width: 58%;
+	float: right;
+}
+input, textarea {
+	-webkit-appearance:none; 
+	-moz-appearance:none; 
+	-webkit-border-radius:0px; 
+	-moz-border-radius:0px; 
+	border-radius:0px; 
+	font-size:15px;
+	background:#279092; 
+	border:none; 
+	float:left; 
+	letter-spacing:1px;
+	padding:10px; 
+	margin-bottom:15px;
+}
+textarea {
+	font-family: 'Roboto Slab', serif;
+	resize:none; 
+	height:135px; 
+	width:100%;
+}
+
+/* Submit button + Glowing animation */
+input[type="submit"]{
+	width: 100%;
+	font-family: 'Muli', sans-serif;
+	font-weight: bold;
+	letter-spacing:2px;
+	font-size:12px; 
+	text-transform: uppercase;
+	border:2px solid #231f20; 
+	margin-bottom: 0;
+	animation:myfirst 3s;
+	-moz-animation:myfirst 3s infinite; /* Firefox */
+	-webkit-animation:myfirst 3s infinite; /* Safari and Chrome */
+	}
+	@-moz-keyframes myfirst {/* Firefox */
+	0%   {background:#279092}
+	50%  {background:#36454f;}
+	100% {background:#279092}
+	}
+	 
+	@-webkit-keyframes myfirst {/* Firefox */
+	0%   {background:#279092}
+	50%  {background:#36454f;}
+	100% {background:#279092}
+	}
+}
+
+/* Contact Placeholder text specs */
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none; margin: 0;
+input:-webkit-autofill { background: black; color: red; }
+}
+::-webkit-input-placeholder {
+   color: #36454f;
+   font-size: 14px; 
+   font-family: 'Roboto Slab', serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #36454f;
+   font-size: 14px; 
+   font-family: 'Roboto Slab', serif;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #36454f;  
+   font-size: 14px; 
+   font-family: 'Roboto Slab', serif;
+}
+:-ms-input-placeholder {  
+   color: #36454f;  
+   font-size: 14px; 
+   font-family: 'Roboto Slab', serif;
+}
+
+/* Email and Phone numbers */
+.required {
+	font-family: 'Muli', sans-serif;
+	font-size: 1em;
+	color: #231f20; 
+	line-height: 1.85em;
+	text-align: left;
+}
+.required a {
+	font-size: 1.5em;
+	text-decoration: none;
+	text-transform: none;
+	color: #231f20; opacity:0.5;
+}
+.required a:hover {
+	color: #231f20; opacity:1;
+}
+
+
+/***********************************************/
+/* FOOTER Copyright 						   */
+/***********************************************/
+
+.footer {
+	background: #36454f;
+	clear: both;
+}
+#copyright {
+	overflow: hidden;
+	padding: 2em 0em;
+	border-top: 1px solid rgba(255,255,255,0.08);
+}
+#copyright p {
+	letter-spacing: 0.20em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.70em;
+	color: rgba(255,255,255,0.3);
+}
+#copyright a {
+	text-decoration: none;
+	color: rgba(255,255,255,0.6);
+}
+
+/*____________________________________________________*/
+
+/* MEDIA QUERIES..............................768px */
+@media (max-width: 768px) {
+
+	li.galleryItem {
+		width: 45%;  
+	}
+	.required a {
+		font-size: 20px;
+	}
+	.required {
+		font-size: 16px;
+	}
+	#copyright {
+		padding: 2em 5em;
+	}
+	.left-cont, .right-cont {
+		padding: 20px;
+		width:100%; 
+		float:none;
+	}
+	.left-cont {
+		padding-bottom: 0;
+	}
+	.style {
+		width: 100%;
+	}
+}
+/* MEDIA QUERIES........................600px */
+@media (max-width: 600px) {
+
+	.section {
+		padding: 20px 20px;
+	}
+
+	li.galleryItem {
+		width: 100%;  
+	}
+	.contentHalf {
+		width: 100%;
+	}
+	.form-tel, .form-email {
+		width: 100%
+	}
+
+}
+/* MEDIA QUERIES........................480px */
+@media (max-width: 480px) {
+
+	li.galleryItem {
+		margin:0;
+		display: block;
+	}
+	.form-title {
+		font-size: 16px;
+		margin:-16px 0 0 30px; 
+	}
+	.form {
+		padding: 0 0 25px 0;
+	}
+	.contentHalf {
+		margin: 0%;
+	}
+}
+
+/* MEDIA QUERIES.....................320px */
+@media (max-width: 320px) {
+
+	.form-title {
+		visibility: hidden;
+	}
+	h3 {
+		font-size: 30px;
+	}
+	.contentHalf {   
+		width: 85%;
+		float: left;
+}
+	#copyright {
+		padding: 2em 2em;
+
+/***********************************************/
+/* FONTS									   */
+/***********************************************/
+
+/*font-family: 'Playfair Display', serif;
+font-family: 'Muli', sans-serif;
+font-family: 'Shadows Into Light Two', cursive;
+font-family: 'Roboto Slab', serif;
+
+#3d3d3d	- Header grey
+#231f20	- Dark black
+rgba (35,31,32,0.8%)
+
+#2ba0a3 - Contact blue - light
+#279092 - Contact Blue - dark
+
+#36454f	- Footer grayCharcoal
+
+#CD7A50 - orange 
+RGB:205,122,80
+
+#ECE3C5 
+#807c6b 
+#667419 
+#E05A00 
+#462D11 
+#B18D3F 

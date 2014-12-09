@@ -52,7 +52,6 @@ h3, textarea ~ h3 {
 p {
   margin: 0 auto;
 	line-height: 150%;
-  padding: 0px 40px;
 }
 
 
@@ -159,34 +158,40 @@ p {
   color: #231f20;
 }
 
+.contentHalf {   /* Melissa T ---  Photography */
+	width: 47%;
+	float: left;
+	margin-bottom: 2.5%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+  position:relative; 
+  border: 2px solid #231f20;
+  padding: 0px 20px;
+/*  background-color: #e39e73;*/
+}
 .contentHalf img {
   border-radius: 50%;
   border: 2px solid #000;
+  margin-top: 30px;
 }
 
 .featured-text {
 	font-size: 20px; 
 }
 
-.contentHalf {   /* Melissa T ---  Photography */
-	width: 47%;
-	float: left;
-  padding-top: 20px;
-	margin-bottom: 2.5%;
-	margin-left: 1.5%;
-	margin-right: 1.5%;
-  position:relative; 
-  border: 2px solid #231f20;
-/*  background-color: #e39e73;*/
-}
-
 .contentHalf h3 {
 	color: #fff;
+  padding-bottom: 20px;
 }
 .contentHalf h3 ~ p {
 	padding: 0px 20px 20px;
 	text-align: center;
 }
+
+.contentHalf.featured-text.fa {
+  color: rgba(135, 135, 135, 0.5);
+}
+
 
 /* Button + Glowing animation */
 input[type="about-button"]{
